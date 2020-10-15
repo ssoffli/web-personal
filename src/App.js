@@ -1,14 +1,21 @@
 import React from 'react';
+
 import './App.css';
-import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import MobileHeader from './components/MobileHeader';
+import Aside from './components/Aside';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <h1>Desarrollador de Software.</h1>
-      <h2>MP: 3.315</h2>
+    <div className="App container-fluid">
+      <MobileHeader/>
+      <div className="row">
+        <Aside/>
+        <Content/>
+      </div>
+      <Footer/>
     </div>
   );
 }
